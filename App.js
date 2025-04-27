@@ -8,13 +8,13 @@ export default function App() {
 
   // Stato per il valore visualizzato e la stringa dell'operazione
   const [valoreDisplay, setValoreDisplay] = useState("0");
-  const [stringaOperazione, setStringaOperazione] = useState("");
+  const [stringaOperazione, setStringaOperazione] = useState(0);
   const [valoreMemoria, setValoreMemoria] = useState(0);
 
   // Funzione per pulire il display e la stringa dell'operazione
   const pulisci = () => {
     setValoreDisplay("0");
-    setStringaOperazione("");
+    setStringaOperazione(0);
   };
 
   // Funzione per gestire l'input dei numeri
